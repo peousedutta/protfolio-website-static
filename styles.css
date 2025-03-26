@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    border: 0;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
+body{
+    background: linear-gradient(45deg, rgba(229, 4, 241, 0.6), rgba(16, 0, 255, 0.6));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container .navbar{
+    width: 1000px;
+    height: 72px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    margin: 37px;
+}
+ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+li{
+    padding: 10px 20px;
+}
+.logo{
+    padding: 10px 20px;
+    color: #E504F1;
+    font-size: large;
+    font-weight: bold;
+}
+a{
+    text-decoration: none;
+    color: #E504F1;
+    font-size: large;
+    font-weight: bold;
+}
+
+
+/* hero section */
+.container .heroSection{
+    width: 1000px;
+    height: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.heroSection .image{
+    width: 700px;
+    height: 250px;
+    border-radius: 20px;
+    background-image: url("/4380747.jpg");
+    background-size: cover; /* Ensures the image covers the entire area */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents image repetition */
+}
+.heroSection .content{
+    margin: 10px;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.content p{
+    font-size: 32px;
+    font-weight: bold;
+}
+.content span{
+    color: white;
+}
+.content button{
+    margin: 20px;
+    padding: 12px 60px;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: #E504F1;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0 4px pink;
+}
+button:hover{background-color: #d203dd;}
+button:active{
+    background-color: #d203dd;
+    box-shadow: 0 1px #666;
+    transform: translateY(4px);
+}
+
+.skills{
+    margin: 26px 0px 18px;
+    color: white;
+}
+
+/* skills section */
+.skillsSections{
+    margin: 0px 0px 20px 0;
+    width: 1000px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.skillsSections .card{
+    max-width: 200px;
+    height: 250px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+    border-radius: 20px;
+}
+.card .title{
+    width: 180px;
+    padding: 10px;
+    background: linear-gradient(45deg, rgba(229, 4, 241, 0.9), rgba(16, 0, 255, 0.4));
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    justify-content: center;
+
+}
+.card .jobSet{
+    padding: 10px;
+    font-size: small;
+}
+
+/* Copyright */
+.copyright{
+    color: white;
+    margin: 10px;
+}
