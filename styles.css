@@ -65,7 +65,7 @@ a{
     width: 700px;
     height: 250px;
     border-radius: 20px;
-    background-image: url("/4380747.jpg");
+    background-image: url("./assets/4380747.jpg");
     background-size: cover; /* Ensures the image covers the entire area */
     background-position: center; /* Centers the image */
     background-repeat: no-repeat; /* Prevents image repetition */
