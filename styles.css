@@ -169,3 +169,27 @@ button:active{
     color: white;
     margin: 10px;
 }
+
+@media(max-width:600px){
+    .container{
+        display: flex;
+        justify-content: center;
+    }
+    .skillsSections{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .skillsSections .card{
+        margin: 10px 0px ;
+        height: 260px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 10px 50px;
+        border-radius: 20px;
+    }
+}
