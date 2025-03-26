@@ -35,7 +35,7 @@ ul{
     justify-content: space-between;
     align-items: center;
 }
-li{
+.container .navbar li{
     padding: 10px 20px;
 }
 .logo{
@@ -132,7 +132,7 @@ button:active{
 }
 .skillsSections .card{
     max-width: 200px;
-    height: 250px;
+    height: 260px;
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -156,6 +156,12 @@ button:active{
 .card .jobSet{
     padding: 10px;
     font-size: small;
+}
+.card li{
+    list-style-type: none;
+    padding: 4px;
+    font-size: 12px;
+    font-weight: 500;
 }
 
 /* Copyright */
