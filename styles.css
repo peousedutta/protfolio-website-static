@@ -5,7 +5,7 @@
 }
 
 body{
-    background: linear-gradient(45deg, rgba(229, 4, 241, 0.6), rgba(16, 0, 255, 0.6));
+    background: black;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -40,17 +40,16 @@ ul{
 }
 .logo{
     padding: 10px 20px;
-    color: #E504F1;
+    color: #00a8e1;
     font-size: large;
     font-weight: bold;
 }
 a{
     text-decoration: none;
-    color: #E504F1;
+    color: #00a8e1;
     font-size: large;
     font-weight: bold;
 }
-
 
 /* hero section */
 .container .heroSection{
@@ -60,15 +59,6 @@ a{
     justify-content: space-between;
     align-items: center;
 }
-/* .heroSection .image{
-    width: 700px;
-    height: 250px;
-    border-radius: 20px;
-    background-image: url("./assets/4380747.jpg");
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat; 
-} */
 .heroSection .content{
     margin: 10px;
     display: flex;
@@ -84,14 +74,14 @@ a{
     justify-content: center;
     align-items: center;
 }
-/* .content .details{
-    color: #fff;
-} */
+.content .desp {
+    color: white;
+}
 .content .speech{
-    color: #fff;
+    color: #00a8e1;
 }
 .content span{
-    color: white;
+    color: #00a8e1;
     margin-left: 10px;
 }
 .content .btn{
@@ -104,14 +94,16 @@ a{
     padding: 12px 80px;
     border-radius: 20px;
     cursor: pointer;
-    background-color: #E504F1;
+    background-color: #00a8e1;
     color: white;
     font-weight: bold;
-    box-shadow: 0 4px pink;
+    box-shadow: 0 4px rgb(182, 193, 255);
 }
-button:hover{background-color: #d203dd;}
+button:hover{
+    background-color: #028ebd;
+}
 button:active{
-    background-color: #d203dd;
+    background-color: #028ebd;
     box-shadow: 0 1px #666;
     transform: translateY(4px);
 }
@@ -144,14 +136,13 @@ button:active{
 .card .title{
     width: 180px;
     padding: 10px;
-    background: linear-gradient(45deg, rgba(229, 4, 241, 0.9), rgba(16, 0, 255, 0.4));
+    background: #028ebd;
     border-radius: 20px;
     font-size: 16px;
     font-weight: bold;
     color: white;
     display: flex;
     justify-content: center;
-
 }
 .card .jobSet{
     padding: 10px;
@@ -170,26 +161,60 @@ button:active{
     margin: 10px;
 }
 
-@media(max-width:600px){
-    .container{
-        display: flex;
-        justify-content: center;
+/* Responsive: Mobile (max-width: 600px) */
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
     }
-    .skillsSections{
-        display: flex;
+
+    .navbar {
         flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
+        width: 100%;
+        height: auto;
+        padding: 10px 0;
     }
-    .skillsSections .card{
-        margin: 10px 0px ;
-        height: 260px;
-        background-color: white;
-        display: flex;
+
+    .logo {
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .pages ul {
         flex-direction: column;
-        justify-content: flex-start;
+        gap: 10px;
+    }
+
+    .heroSection {
+        flex-direction: column;
+        height: auto;
         align-items: center;
-        padding: 10px 50px;
-        border-radius: 20px;
+        text-align: center;
+    }
+
+    .content p {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .content button {
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .skillsSections {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .skillsSections .card {
+        width: 90%;
+        max-width: 300px;
+        margin: 10px 0;
+    }
+
+    .copyright {
+        font-size: 12px;
+        text-align: center;
     }
 }
