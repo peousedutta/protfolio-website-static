@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Projects - Clean Accordion</title>
+    <link rel="stylesheet" href="/css/project-page.css">
+  </head>
+  <body id="projects-page">
+    
+    <h1>My Projects</h1>
+    <div class="projects-container"></div>
+
+  </body>
+</html>
+
+<script type="module">
+  import { showProjects } from '../controller/app.js'
+  document.addEventListener("DOMContentLoaded", () => {
+    showProjects();
+  });
+</script>
