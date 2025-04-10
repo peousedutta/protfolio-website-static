@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Projects - Clean Accordion</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0d0d0d;
+      color: #fff;
+      padding: 30px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 36px;
+      color: #00a8e1;
+    }
+
+    .projects-container {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .project-card {
+      background-color: #ffffff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(0, 168, 225, 0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      color: #000;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 15px rgba(0, 168, 225, 0.4);
+    }
+
+    .project-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      font-size: 22px;
+      font-weight: bold;
+      color: #00a8e1;
+      background-color: #f5f5f5;
+      border-bottom: 1px solid #ddd;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .arrow {
+      transition: transform 0.3s ease;
+      width: 18px;
+      height: 18px;
+    }
+
+    .project-card.active .arrow {
+      transform: rotate(180deg);
+    }
+
+    .project-description-wrapper {
+      overflow: hidden;
+      transition: height 0.4s ease;
+      height: 0;
+    }
+
+    .project-description {
+      background-color: #f0f0f0;
+      color: #333;
+      font-size: 16px;
+      line-height: 1.5;
+      padding: 20px;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 20px;
+      }
+
+      h1 {
+        font-size: 28px;
+      }
+
+      .project-header {
+        font-size: 18px;
+        padding: 15px;
+      }
+
+      .project-description {
+        font-size: 14px;
+        padding: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>My Projects</h1>
+
+  <div class="projects-container">
+    <div class="project-card">
+      <div class="project-header">
+        Project Alpha
+        <svg class="arrow" viewBox="0 0 20 20" fill="none">
+          <path d="M5 8l5 5 5-5" stroke="#00a8e1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <div class="project-description-wrapper">
+        <div class="project-description">
+          A futuristic AI-powered platform designed to automate decision-making with real-time analytics and data visualization dashboards.
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-header">
+        Project Nebula
+        <svg class="arrow" viewBox="0 0 20 20" fill="none">
+          <path d="M5 8l5 5 5-5" stroke="#00a8e1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <div class="project-description-wrapper">
+        <div class="project-description">
+          An immersive 3D web experience for space education using WebGL and Three.js, allowing users to explore galaxies interactively.
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-header">
+        Project Synth
+        <svg class="arrow" viewBox="0 0 20 20" fill="none">
+          <path d="M5 8l5 5 5-5" stroke="#00a8e1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <div class="project-description-wrapper">
+        <div class="project-description">
+          A smart chatbot integrated with natural language processing and machine learning that provides intelligent answers in real time.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const cards = document.querySelectorAll('.project-card');
+
+    cards.forEach(card => {
+      const header = card.querySelector('.project-header');
+      const wrapper = card.querySelector('.project-description-wrapper');
+
+      header.addEventListener('click', () => {
+        const isActive = card.classList.contains('active');
+        
+        if (isActive) {
+          // collapse
+          wrapper.style.height = wrapper.scrollHeight + 'px'; // set current height to allow transition
+          requestAnimationFrame(() => {
+            wrapper.style.height = '0';
+          });
+        } else {
+          // expand
+          wrapper.style.height = wrapper.scrollHeight + 'px';
+        }
+
+        card.classList.toggle('active');
+      });
+
+      wrapper.addEventListener('transitionend', () => {
+        if (!card.classList.contains('active')) {
+          wrapper.style.height = '0';
+        } else {
+          wrapper.style.height = 'auto';
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
