@@ -1,0 +1,22 @@
+[
+    {
+        "title": "Protocommerce - Selenium Automation Testing - Python & PyTest",
+        "description": "Implemented a robust end-to-end automation framework for the Protocommerce demo site using Selenium WebDriver and PyTest, focusing on reliability, maintainability, and cross-browser compatibility.",
+        "link": "https://github.com/peousedutta/protocommerce-selenium"
+    },
+    {
+        "title": "OrangeHRM - Selenium Automation Testing - Python & PyTest",
+        "description": "Developed a comprehensive test automation suite for the OrangeHRM application, including core workflows such as login, utilizing Selenium WebDriver and PyTest for seamless execution.",
+        "link": "https://github.com/peousedutta/orange-hrm-selenium"
+    },
+    {
+        "title": "User CRUD operations with Node.js",
+        "description": "Built a scalable RESTful API to handle user CRUD operations using Node.js and Express, integrated with MongoDB for persistent data storage and structured request handling.",
+        "link": "https://github.com/peousedutta/user-api-nodejs"
+    },
+    {
+        "title": "DataGridX - A grid wise data visualization with Vue.js",
+        "description": "Engineered a responsive and interactive data grid component in Vue.js supporting features like pagination, dynamic data rendering, and real-time updates for optimized user experience in data-heavy applications.",
+        "link": "https://github.com/peousedutta/DataGridX"
+    }
+]

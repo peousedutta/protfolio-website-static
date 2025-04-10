@@ -1,0 +1,55 @@
+[
+    {
+      "title": "Project Management",
+      "description": [
+        "Managed 25+ Devs",
+        "Led Scrum Ceremonies",
+        "Sprint Planning",
+        "Sprint Backlog Grooming",
+        "Tracked Developments",
+        "Delivered Insights",
+        "Aligned Stakeholders",
+        "Managed Releases"
+      ]
+    },
+    {
+      "title": "Communications",
+      "description": [
+        "Liaised With Teams",
+        "Managed Integrations",
+        "Led Agile Meetings",
+        "Resolved Roadblocks",
+        "Wrote BRDs & Stories",
+        "Shared progress updates",
+        "Ensured Transparency",
+        "Facilitated Teamwork"
+      ]
+    },
+    {
+      "title": "QA Testing",
+      "description": [
+        "Wrote UAT Scripts",
+        "Improved QA Processes",
+        "Defined Test Criteria",
+        "Tracked & Fixed Bugs",
+        "Led Regression Tests",
+        "Ensured Release Quality",
+        "Created Test Scenarios",
+        "Maintained QA Docs"
+      ]
+    },
+    {
+      "title": "Development",
+      "description": [
+        "Built Vue.js apps",
+        "Integrated APIs",
+        "Optimized SQL queries",
+        "Reviewed system design",
+        "Gathered requirements",
+        "Improved performance",
+        "Fixed critical bugs",
+        "Wrote user stories"
+      ]
+    }
+  ]
+  
