@@ -1,22 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Peouse - My Projects</title>
-    <link rel="stylesheet" href="../css/project-page.css">
-  </head>
-  <body id="projects-page">
-    
-    <h1>Peouse's Personal Projects</h1>
-    <div class="projects-container"></div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Peouse - My Projects</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/project-page.css">
+</head>
 
-  </body>
+<body id="projects-page">
+  <h1>Peouse's Personal Projects</h1>
+  <div class="projects-container" id="project-list"></div>
+</body>
 </html>
 
+
 <script type="module">
-  import { showProjects } from '../controller/app.js'
-  document.addEventListener("DOMContentLoaded", () => {
-    showProjects();
-  });
+  function getProjects(){
+    try {        
+      return fetch('../data/project.json')
+      .then(res => res.json())
+    } catch (error) {
+      console.log(error);
+    }
+  }
+  
+
+  function createAccordionItem(project) {
+    const accordion = document.createElement("div");
+    accordion.classList.add("accordion");
+    const header = document.createElement("div");
+    header.classList.add("accordion-header");
+    header.innerHTML = `
+      <span class="project-title">${project.title}</span>
+      <span class="icon">&#9660;</span> <!-- Down arrow icon -->
+    `;
+
+    const body = document.createElement("div");
+    body.classList.add("accordion-body");
+    body.innerHTML = `
+      <div class="project-description">${project.description}</div>
+      <a href="${project.link}" class="project-link">View Project →</a>
+    `;
+
+    header.addEventListener("click", () => {
+      body.classList.toggle("open");
+      header.classList.toggle("open");
+    });
+
+    accordion.appendChild(header);
+    accordion.appendChild(body);
+    
+    return accordion;
+  }
+
+  getProjects()
+    .then(projects => {
+      const projectContainer = document.getElementById("project-list");
+      projects.forEach(project => {
+        projectContainer.appendChild(createAccordionItem(project));
+      });
+    })
 </script>
