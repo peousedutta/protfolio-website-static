@@ -37,7 +37,10 @@ document.addEventListener('DOMContentLoaded', function() {
     // Typing effect
     const typingElement = document.querySelector('.typing');
     if (typingElement) {
-      const words = ["I build things for the web.", "I create digital experiences.", "I develop web applications."];
+      const words = [
+        "I ensure software quality through automation", 
+        "I drive successful project delivery from start to finish", 
+        "I manage stakeholder expectations with clarity and consistency"];
       let wordIndex = 0;
       let charIndex = 0;
       let isDeleting = false;
