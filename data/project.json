@@ -1,7 +1,7 @@
 [
     {
         "title": "Bookstore API - Automated Testing Framework with PyTest",
-        "description": "Designed and implemented an API testing framework for the Bookstore application using PyTest with environment-specific configurations, service object model, and robust assertion strategies. Integrated HTML reporting, slack notifications, CI/CD pipelines, and GitHub Actions cron jobs for scheduled test execution and continuous quality checks.",
+        "description": "Designed and implemented an API testing framework for the Bookstore application using PyTest with environment-specific configurations, service object model, and robust assertion strategies. Integrated HTML reporting, Slack notifications, CI/CD pipelines, and GitHub Actions cron jobs for scheduled test execution and continuous quality checks.",
         "link": "https://github.com/peousedutta/Pytest-Bookstore-API-Testing"
     },
     {
