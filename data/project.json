@@ -1,5 +1,10 @@
 [
     {
+        "title": "Bookstore API - Automated Testing Framework with PyTest",
+        "description": "Designed and implemented an API testing framework for the Bookstore application using PyTest with environment-specific configurations, service object model, and robust assertion strategies. Integrated HTML reporting, slack notifications, CI/CD pipelines, and GitHub Actions cron jobs for scheduled test execution and continuous quality checks.",
+        "link": "https://github.com/peousedutta/Pytest-Bookstore-API-Testing"
+    },
+    {
         "title": "Protocommerce - Selenium Automation Testing - Python & PyTest",
         "description": "Implemented a robust end-to-end automation framework for the Protocommerce demo site using Selenium WebDriver and PyTest, focusing on reliability, maintainability, and cross-browser compatibility.",
         "link": "https://github.com/peousedutta/protocommerce-selenium"
